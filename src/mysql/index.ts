@@ -1,11 +1,13 @@
 import 'reflect-metadata';
+import { Candidate } from 'src/entity/candidate.entity';
+import { Vote } from 'src/entity/vote.entity';
 import { DataSource } from 'typeorm';
 import configs from '../configs';
 
 const AppDataSource = new DataSource({
   ...(configs.mysql as any),
   synchronize: true,
-  entities: [],
+  entities: [Candidate, Vote],
   migrations: [],
   subscribers: [],
 });

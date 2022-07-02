@@ -1,26 +1,26 @@
 export default {
   redis: {
-    host: process.env.REDIS_HOST! || 'localhost',
-    password: process.env.REDIS_PASSWORD! || 'redispw',
-    port: Number(process.env.REDIS_PORT!) || 49153,
+    host: process.env.REDIS_HOST || 'localhost',
+    password: process.env.REDIS_PASSWORD || 'redispw',
+    port: Number(process.env.REDIS_PORT) || 49153,
   },
   mail: {
     config: {
-      host: process.env.MAIL_HOST!,
-      port: Number(process.env.MAIL_PORT!),
+      host: process.env.MAIL_HOST,
+      port: Number(process.env.MAIL_PORT),
       auth: {
-        user: process.env.MAIL_USER!,
-        pass: process.env.MAIL_PASS!,
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASS,
       },
     },
     default: {
-      from: process.env.MAIL_FROM!,
-      to: process.env.MAIL_TO!,
+      from: process.env.MAIL_FROM,
+      to: process.env.MAIL_TO,
     },
   },
   mysql: {
     type: 'mysql',
-    host: process.env.MYSQL_HOST!,
+    host: process.env.MYSQL_HOST,
     port: Number(process.env.MYSQL_PORT),
     username: process.env.MYSQL_USERNAME,
     password: process.env.MYSQL_PASSWORD,
