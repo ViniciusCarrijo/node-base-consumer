@@ -1,6 +1,6 @@
 import 'reflect-metadata';
-import { Candidate } from 'src/entity/candidate.entity';
-import { Vote } from 'src/entity/vote.entity';
+import { Candidate } from '../entity/candidate.entity';
+import { Vote } from '../entity/vote.entity';
 import { DataSource } from 'typeorm';
 import configs from '../configs';
 
